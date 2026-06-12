@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Student Registration System
+    </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+    
+            <div class="profile"></div>
+
+        <h1>Stundent Registration System</h1>
+        <p>Manage student registration easily and efficiently</p>
+        </div>
+        <div class="right-panel">
+        
+            <h2>login</h2>
+
+
+        <input type="text"  id="username"  placeholder ="Username" >
+    
+        <input type="password" id="password"  placeholder ="Password" >
+        <button onclick="login()">
+        Login
+        </button>
+     <script>
+        function login(){
+ let username = document.getElementById("username").value;
+let password= document.getElementById("password").value;
+
+if(username==="" || password===""){
+    alert("Fill all fields");
+    return;
+}
+   window.location.href = "register.html";
+     }
+        </script>
+       
+    </div>
+    </div>
+
+</body>
+
+</html>
